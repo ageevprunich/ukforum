@@ -1,0 +1,12 @@
+.container{
+    display:  flex;
+}
+
+.headliners{
+    display: flex;
+}
+
+.headliners-photo{
+    width: 320px;
+    height: 434px;
+}
