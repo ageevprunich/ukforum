@@ -6,7 +6,7 @@ import headlinersphoto from "../headliners-photo.png"
 const HeroSection = () => {
     return (
         <section className="hero-section">
-            <div className="container">
+            <div className="container hero-section-container">
                 <div className="left-container">
                     <h1>buy <br /> ukrainian <br />forum</h1>
                     <p>міжнародна експансія</p>

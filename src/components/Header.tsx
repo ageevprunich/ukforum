@@ -1,11 +1,11 @@
 import React from "react";
 import './Header.css';
-import logo from "../logo.svg";
+import logo from "../images/logo.svg";
 
 const Header = () => {
     return (
         <header className="main-header">
-            <div className="container">
+            <div className="container header-container">
                 <div className="logo">
                     <img src={logo} alt="Logo" />
                 </div>

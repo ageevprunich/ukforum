@@ -1,0 +1,40 @@
+.footer{
+    background-color: var(--black-color);
+    padding: 0 16px 0 20px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-rights{
+    color: var(--copy-rights-color);
+}
+
+.footer-links-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footer-links{
+    text-decoration: none;
+    color: var(--text-color-white);
+    /* font-family: 'Roboto'; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    transition: font-weight 0.2s;
+}
+
+.footer-links:hover{
+    font-weight: 700;
+}
+
+.socials{
+    fill: var(--text-color-white);
+}

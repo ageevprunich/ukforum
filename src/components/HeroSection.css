@@ -1,4 +1,4 @@
-.container{
+.hero-section-container{
     display:  flex;
 }
 
@@ -6,7 +6,7 @@
     display: flex;
 }
 
-.headliners-photo{
+.headliners-photo img{
     width: 320px;
     height: 434px;
 }
