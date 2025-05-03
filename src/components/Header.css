@@ -1,18 +1,12 @@
+.header {
+    padding: 28px 0px;
+    background-color: var(--primary-white);
+}
+
 .header-container{
     display: flex;
     justify-content: space-between;
-}
-
-.main-header{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1920px;
-    max-height: 120px;
-    /* width: 1920px;
-    height: 120px; */
-    padding: 28px 0;
-    background-color: var(--primary-white);
 }
 
 .logo img{
@@ -20,7 +14,7 @@
     height: 65px;
 }
 
-.main-nav ul{
+.header-menu {
     list-style: none;
     display: flex;
     margin: 0;
@@ -29,24 +23,25 @@
 
 }
 
-.main-nav a{
+.links{
     text-decoration: none;
-    color: var(--text-color-white);
-    /* font-family: 'Roboto'; */
+    color: var(--text-color-black);
     font-weight: 400;
     font-size: 16px;
     line-height: 40px;
     transition: font-weight 0.2s;
 }
 
-.main-nav a:hover{
+.links:hover{
     font-weight: 700;
 }
 
-.ticket-btn button{
+.header-buy-ticket-btn{
     background-color: var(--accent-yellow);
-    color: var(--text-color);
-    border: 2px solid var(--text-color-black);
+    color: var(--black-color);
+    border: 2px solid var(--black-color);
+    width: 170px;
+    height: 48px;
     padding: 4px 24px;
     font-size: 15px;
     font-weight: 400;
@@ -55,7 +50,7 @@
     transition: background-color 0.2s;
 }
 
-.ticket-btn button:hover{
-    background-color: var(--text-color-black);
+.header-buy-ticket-btn:hover{
+    background-color: var(--black-color);
     color: var(--text-color-white);
 }

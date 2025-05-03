@@ -4,23 +4,19 @@ import logo from "../images/logo.svg";
 
 const Header = () => {
     return (
-        <header className="main-header">
+        <header className="header">
             <div className="container header-container">
-                <div className="logo">
-                    <img src={logo} alt="Logo" />
-                </div>
-                <nav className="main-nav">
-                    <ul className="menu">
-                        <li><a href="#">Про форум</a></li>
-                        <li><a href="#">Спікери</a></li>
-                        <li><a href="#">Програма</a></li>
-                        <li><a href="#">Спонсори та партнери</a></li>
-                        <li><a href="#">Контакти</a></li>
+                <a className="logo" href="#"><img src={logo} alt="Logo" /></a>
+                <nav className="header-nav">
+                    <ul className="header-menu">
+                        <li><a className="links" href="#">Про форум</a></li>
+                        <li><a className="links" href="#">Спікери</a></li>
+                        <li><a className="links" href="#">Програма</a></li>
+                        <li><a className="links" href="#">Спонсори та партнери</a></li>
+                        <li><a className="links" href="#">Контакти</a></li>
                     </ul>
                 </nav>
-                <div className="ticket-btn">
-                    <button>Придбати квитки</button>
-                </div>
+                <button className="header-buy-ticket-btn" >Придбати квитки</button>
             </div>
             
             

@@ -10,6 +10,7 @@ import Tickets from './components/Tickets';
 import Sponsors from './components/Sponsors';
 import Organizers from './components/Organizers';
 import Footer from './components/Footer';
+import CookieConsent from './components/CookieConsent';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
     <Tickets />
     <Sponsors />
     <Organizers />
-    <Footer />  
+    <Footer /> 
+    <CookieConsent/>  
     </>
     
   );
