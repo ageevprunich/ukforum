@@ -1,0 +1,234 @@
+.tickets-section{
+    padding: 100px 0;
+}
+
+.title-and-benefits{
+    max-width: 270px;
+    width: 100%;
+}
+
+.tickets-title{
+    position: relative;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 100px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.tickets-title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 10px;
+    background-color: var(--text-color-black);
+}
+
+.tickets-table {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-benefits {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 280px;
+}
+
+.ticket-benefits-title{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    height: 15px;
+    padding: 11px 0 10px 17px;
+    margin: 0;
+}
+.ticket-benefits-title:nth-child(odd) {
+    background-color: var(--grey-color);
+}
+
+.ticket-benefits-title:last-child {
+    height: 32px;
+}
+
+.ticket-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 890px;
+}
+
+.ticket-card {
+    position: relative;
+    background: var(--text-color-white);
+    border: none;
+    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.15);
+    max-width: 270px;
+    max-height: 860px;
+    width: 33%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ticket-card::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+    box-shadow: 0 20 15 1000px rgba(0, 0, 0, 0.15);
+    /* фон секції */
+    z-index: 10;
+}
+
+.ticket-card-title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 22px 33px 30px;
+}
+
+.ticket-card-date{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 33px 20px;
+}
+
+.ticket-card-old-price {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 33px 14px;
+    text-decoration: line-through;
+    color: var(--data-color-grey);
+}
+
+.ticket-card-price {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 33px;
+}
+
+.ticket-card-buy-btn {
+    background-color: var(--accent-yellow);
+    padding: 5px 25px;
+    margin: 60px 33px 40px;
+    max-width: 205px;
+    max-height: 50px;
+    border: none;
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.ticket-card-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ticket-card-options::before {
+    content: '';
+    display: block;
+    border-top: 2px dashed var(--data-color-grey);
+    width: 100%;
+    margin: 0;
+}
+
+.ticket-card-options-icon {
+    padding: 12px 0 12px;
+    height: 12px;
+    text-align: center; 
+}
+
+.ticket-card-options-icon:nth-child(odd) {
+    background-color: var(--grey-color);
+}
+
+.ticket-card-options-icon:last-child{
+    height: 29px;
+}
+
+.icon-accept{
+    width: 18px;
+    height: 12px;
+}
+
+.icon-decline{
+    width: 12px;
+    height: 12px;
+}
+
+.discount-section {
+    display: flex;
+    margin-top: 70px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 160px;
+}
+
+.discount-title {
+    background: var(--accent-yellow);
+    padding: 55px 75px 64px;
+    
+    max-width: 270px;
+    height: 100%;
+}
+
+.discount-title-text{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.discount-details {
+    position: relative;
+    max-width: 810px;
+    max-height: 160px;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0 30px 80px;
+    background-color: var(--grey-color);
+}
+
+.discount-details-text{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.discount-details-text:first-child{
+    margin-bottom: 19px;
+}
+
+.discount-details-text span{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-left: 215px;
+}
+
+.discount-corner-icon{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+}
