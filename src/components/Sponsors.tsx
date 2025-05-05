@@ -1,69 +1,101 @@
 import React from "react";
 import './Sponsors.css';
+import decordoubleplus from '../images/decor-double-plus.svg'
 
 const Sponsors = () => {
     return (
         <section className="sponsors-section">
             <div className="container">
-                <h2 className="sponsors-title">Спонсори та партнери</h2>
-                <p>Генеральний спонсор</p>
-                <div></div>
-                <p>Титульний спонсор</p>
-                <div></div>
-                <div></div>
-                <p>Стратегічний партнер</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Інноваційний партнер</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Офіційний спонсор</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Галузевий партнер</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Галузевий партнер</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Спеціальний спонсор</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Партнер</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Партнер</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Інформаційні партнери</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Інформаційні партнери</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <p>Інформаційні партнери</p>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div className="decor-and-title">
+                    <h2 className="sponsors-title">Спонсори та партнери</h2>
+                    <img className="sponsors-decor-title" src={decordoubleplus} alt="decor-arrow" />
+                </div>
+                <p className="sponsors-text">Генеральний спонсор</p>
+                <div >
+                    <div className="sponsors-baner logo-preset">БАНЕР</div>
+                </div>
+                <p className="sponsors-text">Титульний спонсор</p>
+                <div className="sponsors-banners-and-logo"> 
+                    <div className="sponsors-logo-big logo-preset">LOGO</div>
+                    <div className="sponsors-logo-big logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Стратегічний партнер</p>
+                <div className="sponsors-banners-and-logo">
+                    
+                    <div className="sponsors-video logo-preset">MIRAPLAY</div>
+                    <div className="sponsors-video logo-preset">MIRAPLAY</div>
+                    <div className="sponsors-video logo-preset">MIRAPLAY</div>
+                </div>
+                <p className="sponsors-text">Інноваційний партнер</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Офіційний спонсор</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Галузевий партнер</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Галузевий партнер</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Спеціальний спонсор</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Партнер</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Партнер</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Інформаційні партнери</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Інформаційні партнери</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                </div>
+                <p className="sponsors-text">Інформаційні партнери</p>
+                <div className="sponsors-banners-and-logo">
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="sponsors-logo-small logo-preset">LOGO</div>
+                    <div className="transparent-div"></div>
+                </div>
             </div>
         </section>
     );

@@ -24,8 +24,10 @@ const HeroSection = () => {
                         <img className="hero-section-title-img" src={herosectiontitle} alt="Title" />
                         <h2 className="hero-section-title-text">2024</h2>
                     </div>
-                    <button className="buy-ticket-btn">Придбати квиток</button>
-                    <button className="registration-btn">Зареєструватися</button>
+                    <div className="btns-container">
+                        <button className="buy-ticket-btn">Придбати квиток</button>
+                        <button className="registration-btn">Зареєструватися</button>
+                    </div>
                     <div className="container-socials">
                         <ul className="socials-list">
                             <li><a className="socials" href="#"><TelegramIcon /></a></li>
