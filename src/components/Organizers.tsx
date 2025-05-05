@@ -1,26 +1,46 @@
 import React from "react";
 import './Organizers.css';
+import dotdoubleslashblack from '../images/decor-dot-doubleslash-black.svg';
+import fuwartlogo from '../images/fuwart-logo.svg';
+import megapolislogo from '../images/megapolis-logo.svg';
+import { ReactComponent as TelephoneIcon } from '../images/telefon-icon.svg';
+import { ReactComponent as MailIcon } from '../images/mail-icon.svg';
+
 
 const Organizers = () => {
     return (
         <section className="organizers-section">
             <div className="container">
-                <h2 className="organizers-title">Організатори</h2>
-                <div className="organizers-logo"></div>
-                <p>Зв'язатися з організатором</p>
-                <a className="contact-organizers-btn" href="#"></a>
-                <p>або</p>
-                <div className="organizers-contacts">
-                    <address>
-                        <ul>
-                            <li className="organizers-contacts-list">
-                                <a className="address-link" href="tel:+380502322333">+380 50 232 23 33</a>
-                            </li>
-                            <li>
-                                <a className="address-link" href="mailto:welcome@482.org.ua">welcome@482.org.ua</a>
-                            </li>
-                        </ul>
-                    </address>
+                <div className="decor-and-title">
+                    <h2 className="organizers-title">Організатори</h2>
+                    <img className="organizers-decor-title" src={dotdoubleslashblack} alt="decor-dotdoubleslashblack" />
+                </div>
+                
+                <div className="organizers-logo-container">
+                    <div className="fuwart-logo">
+                        <img className="fuwart-logo-svg" src={fuwartlogo} alt="fuwart-logo" />
+                        <p className="fuwart-logo-text">marketplace of Ukrainian art</p>
+                    </div>
+                    <div className="megapolis-logo">
+                        <img className="megapolis-logo-svg" src={megapolislogo} alt="megapolis-logo" />
+                    </div>
+                </div>
+                <div className="contact-organizers-container">
+                    <p className="contact-organizers-text-bold">Зв'язатися з організатором</p>
+                    <button className="contact-organizers-btn">Зв'язатися</button>
+                    <p className="contact-organizers-text">або</p>
+                    <div className="organizers-contacts">
+                        <address>
+                            <div className="contact-item">
+                                <div className="contact-icon"><TelephoneIcon /></div>
+                                <a className="address-link" href="tel:+380502322333"> +380 50 232 23 33</a>
+                            </div>
+                            <div className="contact-item">
+                                <div className="contact-icon"><MailIcon /></div>
+                                <a className="address-link underline" href="mailto:welcome@482.org.ua">welcome@482.org.ua</a>
+                            </div>
+                        </address>
+                    </div>
                 </div>
             </div>
         </section>

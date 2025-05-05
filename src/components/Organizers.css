@@ -1,0 +1,115 @@
+.organizers-section{
+    padding: 100px 0 130px;
+}
+
+.organizers-title{
+    position: relative;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 100px;
+    margin: 0;
+}
+
+.organizers-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 10px;
+    background-color: var(--text-color-black);
+}
+
+.organizers-decor-title{
+    width: 70px;
+    height: 35px;
+}
+
+.organizers-logo-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 0 170px;
+}
+
+.fuwart-logo{
+    width: 100%;
+    max-width: 260px;
+    height: 85px;
+}
+
+.fuwart-logo-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    margin: 10px 0 0;
+}
+
+.megapolis-logo{
+    width: 100%;
+    max-width: 373px;
+    height: 58px;
+}
+
+.contact-organizers-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-organizers-text-bold {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+}
+
+.contact-organizers-btn{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding: 14px 85px;
+    margin: 30px 0 66px;
+    background-color: var(--accent-yellow);
+    border: none;
+    cursor: pointer;
+}
+
+.contact-organizers-text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 0 33px;
+}
+
+.organizers-contacts{
+    display: flex;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 18px;
+}
+
+.contact-item:last-child{
+    margin: 0;
+}
+
+.address-link{
+    text-decoration: none;
+    color: var(--text-color-black);
+}
+
+.underline{
+    text-decoration: underline;
+}
