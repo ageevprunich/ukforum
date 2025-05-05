@@ -1,5 +1,13 @@
 import React from "react";
 import './Footer.css';
+import { ReactComponent as InfoIcon } from '../images/info-octagon.svg';
+import { ReactComponent as TelegramIcon } from '../images/telegram-icon.svg';
+import { ReactComponent as FacebookIcon } from '../images/facebook-icon.svg';
+import { ReactComponent as InstagramIcon } from '../images/instagram-icon.svg';
+import { ReactComponent as LinkedInIcon } from '../images/linkedin-icon.svg';
+import { ReactComponent as YouTubeIcon } from '../images/youtube-icon.svg';
+
+
 
 const Footer = () => {
     return (
@@ -8,20 +16,21 @@ const Footer = () => {
                 <p className="copy-rights">
                 &copy; 2023 BUF. All Rights Reserved
                 </p>
-                <ul className="footer-links-list">
-                    <li><a className="footer-links" href="#">Оферта</a></li>
-                    <li><a className="footer-links" href="#">Політика конфіденційності</a></li>
-                </ul>
-                <div className="socials-container">
-                    <a href="#">
-                        <svg className="social" width="20" height="20">
-                            <use href="./images/icons.svg#icon-telegram-icon"></use>
-                        </svg>
-                    </a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
+                <div className="footer-links-container">
+                    <ul className="footer-links-list">
+                        <li><a className="footer-links" href="#">Оферта</a></li>
+                        <li><a className="footer-links" href="#">Політика конфіденційності</a></li>
+                    </ul>
+                </div>
+                
+                <div className="footer-container-socials">
+                    <ul className="footer-socials-list">
+                        <li><a className="footer-socials" href="#"><TelegramIcon /></a></li>
+                        <li><a className="footer-socials" href="#"><FacebookIcon /></a></li>
+                        <li><a className="footer-socials" href="#"><InstagramIcon/></a></li>
+                        <li><a className="footer-socials" href="#"><LinkedInIcon/></a></li>
+                        <li><a className="footer-socials" href="#"><YouTubeIcon/></a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
