@@ -1,8 +1,8 @@
 import React from "react";
 import './Tickets.css';
-import decorarrow from '../images/decor-arrow.svg';
 import { ReactComponent as AcceptIcon } from '../images/decor-accept.svg';
 import { ReactComponent as DeclineIcon } from '../images/decor-decline.svg';
+
 
 const Tickets = () => {
     return (
@@ -70,7 +70,7 @@ const Tickets = () => {
                     <div className="discount-details">
                         <p className="discount-details-text">від 3 квитків <span>-5%</span></p>
                         <p className="discount-details-text">від 6 квитків <span>-10%</span></p>
-                        <img className="discount-corner-icon" src={decorarrow} alt="decoration-arrow" />
+                        <img className="discount-corner-icon" src="/images/decor-arrow.svg" alt="decoration-arrow" />
                     </div>
                 </div>
             </div>

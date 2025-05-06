@@ -1,7 +1,5 @@
 import React from "react";
 import './Reasons.css';
-import decorarrow from '../images/decor-arrow.svg';
-import decordoubleplus from '../images/decor-double-plus.svg'
 
 
 const Reasons = () => {
@@ -22,7 +20,7 @@ const Reasons = () => {
                             дистриб'юторами, постачальниками та іншими учасниками, які можуть сприяти успішній експансії
                             вашого бізнесу на зовнішні ринки.
                         </p>
-                        <img className="reason-card-corner-icon" src={decorarrow} alt="decoration-arrow" />
+                        <img className="reason-card-corner-icon" src='/images/decor-arrow.svg' alt="decoration-arrow" />
                     </div>
                     <div className="reason-info-cards">
                         <h2 className="card-number">02</h2>
@@ -32,7 +30,7 @@ const Reasons = () => {
                             міжкультурних аспектів та інших факторів, які можуть бути важливими для успішного розширення
                             вашої діяльності за кордон.
                         </p>
-                        <img className="reason-card-corner-icon" src={decorarrow} alt="decoration-arrow" />
+                        <img className="reason-card-corner-icon" src='/images/decor-arrow.svg' alt="decoration-arrow" />
                     </div>
                     <div className="reason-info-cards">
                         <h2 className="card-number">03</h2>
@@ -41,11 +39,11 @@ const Reasons = () => {
                             Тут ви отримаєте змогу зустрітися з представники венчурних фондів, бізнес-янголів та інших
                             інвестиційних організацій. Також, ви дізнаєтесь, як отримати гранти або залучити кредит на вигідних умовах.
                         </p>
-                        <img className="reason-card-corner-icon" src={decorarrow} alt="decoration-arrow" />
+                        <img className="reason-card-corner-icon" src='/images/decor-arrow.svg' alt="decoration-arrow" />
                     </div>
                 </div>
                 <div className="decor-container">
-                    <img className="reason-decor" src={decordoubleplus} alt="decoration-plus" />
+                    <img className="reason-decor" src='/images/decor-double-plus.svg' alt="decoration-plus" />
                 </div>
                 
             </div>

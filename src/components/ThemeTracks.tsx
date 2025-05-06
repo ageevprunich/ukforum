@@ -1,7 +1,6 @@
 import React from "react";
 import './ThemeTracks.css';
-import decorarrow from '../images/decor-arrow.svg';
-import dotdoubleslashblack from '../images/decor-dot-doubleslash-black.svg';
+
 
 const ThemeTracks = () => {
     return (
@@ -9,7 +8,7 @@ const ThemeTracks = () => {
             <div className="container">
                     <div className="decor-and-title">
                         <h2 className="theme-tracks-title">тематичні треки</h2>
-                        <img className="theme-tracks-decor-title" src={decorarrow} alt="decor-arrow" />
+                        <img className="theme-tracks-decor-title" src='/images/decor-arrow.svg' alt="decor-arrow" />
                     </div>
                     
                     <div className="theme-tracks-cards-container">
@@ -59,7 +58,7 @@ const ThemeTracks = () => {
                             <button className="tracks-btn-transparent">програма pdf</button>
                             <button className="tracks-btn-transparent">анонс</button>
                         </div>
-                        <img className="tracks-decor" src={dotdoubleslashblack} alt="decoration-dot-double-slash-black" />
+                        <img className="tracks-decor" src='/images/decor-dot-doubleslash-black.svg' alt="decoration-dot-double-slash-black" />
                     </div>
                     
                 </div>

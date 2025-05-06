@@ -127,17 +127,17 @@
     color: var(--accent-yellow);
 }
 
-.socials{
+/* .socials{
 
-    /* display: flex;
+     display: flex;
     align-items: center;
     justify-content: center;
     width: 29px;
     height: 29px;
     background-color: var(--accent-yellow);
     border-radius: 5px;
-    transition:  0.2s; */
-}
+    transition:  0.2s; 
+} */
 
 .socials svg {
     width: 18px;

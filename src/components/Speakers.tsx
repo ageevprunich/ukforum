@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Speakers.css';
 import speakers from '../speakers-data';
-import dotdoubleslash from '../images/decor-dot-doubleslash.svg';
+
 
 const Speakers = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,7 +18,7 @@ const Speakers = () => {
                 
                     <div className="decor-and-title">
                         <h2 className="speakers-title">Спікери</h2>
-                        <img className="speakers-decor-title" src={dotdoubleslash} alt="decoration-doubleslashdot" />
+                        <img className="speakers-decor-title" src='/images/decor-dot-doubleslash.svg' alt="decoration-doubleslashdot" />
                     </div>
                     
                     <div className="speakers-carousel" >

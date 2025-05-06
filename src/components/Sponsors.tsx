@@ -1,6 +1,5 @@
 import React from "react";
 import './Sponsors.css';
-import decordoubleplus from '../images/decor-double-plus.svg'
 
 const Sponsors = () => {
     return (
@@ -8,7 +7,7 @@ const Sponsors = () => {
             <div className="container">
                 <div className="decor-and-title">
                     <h2 className="sponsors-title">Спонсори та партнери</h2>
-                    <img className="sponsors-decor-title" src={decordoubleplus} alt="decor-arrow" />
+                    <img className="sponsors-decor-title" src='/images/decor-double-plus.svg' alt="decor-arrow" />
                 </div>
                 <p className="sponsors-text">Генеральний спонсор</p>
                 <div >

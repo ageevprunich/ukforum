@@ -1,8 +1,5 @@
 import React from "react";
 import './Organizers.css';
-import dotdoubleslashblack from '../images/decor-dot-doubleslash-black.svg';
-import fuwartlogo from '../images/fuwart-logo.svg';
-import megapolislogo from '../images/megapolis-logo.svg';
 import { ReactComponent as TelephoneIcon } from '../images/telefon-icon.svg';
 import { ReactComponent as MailIcon } from '../images/mail-icon.svg';
 
@@ -13,16 +10,16 @@ const Organizers = () => {
             <div className="container">
                 <div className="decor-and-title">
                     <h2 className="organizers-title">Організатори</h2>
-                    <img className="organizers-decor-title" src={dotdoubleslashblack} alt="decor-dotdoubleslashblack" />
+                    <img className="organizers-decor-title" src='/images/decor-dot-doubleslash-black.svg' alt="decor-dotdoubleslashblack" />
                 </div>
                 
                 <div className="organizers-logo-container">
                     <div className="fuwart-logo">
-                        <img className="fuwart-logo-svg" src={fuwartlogo} alt="fuwart-logo" />
+                        <img className="fuwart-logo-svg" src='/images/fuwart-logo.svg' alt="fuwart-logo" />
                         <p className="fuwart-logo-text">marketplace of Ukrainian art</p>
                     </div>
                     <div className="megapolis-logo">
-                        <img className="megapolis-logo-svg" src={megapolislogo} alt="megapolis-logo" />
+                        <img className="megapolis-logo-svg" src='/images/megapolis-logo.svg' alt="megapolis-logo" />
                     </div>
                 </div>
                 <div className="contact-organizers-container">
