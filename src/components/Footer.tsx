@@ -1,6 +1,5 @@
 import React from "react";
 import './Footer.css';
-import { ReactComponent as InfoIcon } from '../images/info-octagon.svg';
 import { ReactComponent as TelegramIcon } from '../images/telegram-icon.svg';
 import { ReactComponent as FacebookIcon } from '../images/facebook-icon.svg';
 import { ReactComponent as InstagramIcon } from '../images/instagram-icon.svg';

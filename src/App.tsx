@@ -11,6 +11,7 @@ import Sponsors from './components/Sponsors';
 import Organizers from './components/Organizers';
 import Footer from './components/Footer';
 import CookieConsent from './components/CookieConsent';
+import Reservation from './components/Reservation';
 
 function App() {
   return (
@@ -24,7 +25,10 @@ function App() {
     <Sponsors />
     <Organizers />
     <Footer /> 
-    <CookieConsent/>  
+    <CookieConsent /> 
+    <Reservation isOpen={false} onClose={function (): void {
+        throw new Error('Function not implemented.');
+      } } />  
     </>
     
   );

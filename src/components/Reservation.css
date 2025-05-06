@@ -1,0 +1,60 @@
+.reservation-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation-modal {
+    background: var(--text-color-white);
+    padding: 60px 70px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    max-width: 470px;
+    max-height: 500px;
+}
+
+.reservation-modal-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 0 0 36px;
+    text-transform: uppercase;
+}
+
+.reservation-modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-height: 424px;
+    
+}
+
+.reservation-modal-input {
+    width: 100%;
+    max-width: 429px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 1px solid var(--text-color-black);
+}
+
+.submit-btn {
+    padding: 10px;
+    background: var(--accent-yellow);
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}

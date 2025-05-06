@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './HeroSection.css';
 import headlinersphoto from '../images/headliners-photo.png';
 import herosectiontitle from '../images/hero-section-title.svg';
@@ -13,10 +13,12 @@ import { ReactComponent as FacebookIcon } from '../images/facebook-icon.svg';
 import { ReactComponent as InstagramIcon } from '../images/instagram-icon.svg';
 import { ReactComponent as LinkedInIcon } from '../images/linkedin-icon.svg';
 import { ReactComponent as YouTubeIcon } from '../images/youtube-icon.svg';
-
+import Reservation from "./Reservation";
 
 const HeroSection = () => {
+    const [showModal, setShowModal] = useState(false);
     return (
+        
         <section className="hero-section">
             <div className="container hero-section-container">
                 <div className="left-container">
@@ -26,11 +28,12 @@ const HeroSection = () => {
                     </div>
                     <div className="btns-container">
                         <button className="buy-ticket-btn">Придбати квиток</button>
-                        <button className="registration-btn">Зареєструватися</button>
+                        <button className="registration-btn" onClick={() => setShowModal(true)}>Зареєструватися</button>
+                        <Reservation isOpen={showModal} onClose={() => setShowModal(false)} />
                     </div>
                     <div className="container-socials">
                         <ul className="socials-list">
-                            <li><a className="socials" href="#"><TelegramIcon /></a></li>
+                            <li className="socials-test-li"><a className="socials" href="#"><TelegramIcon /></a></li>
                             <li><a className="socials" href="#"><FacebookIcon /></a></li>
                             <li><a className="socials" href="#"><InstagramIcon/></a></li>
                             <li><a className="socials" href="#"><LinkedInIcon/></a></li>
