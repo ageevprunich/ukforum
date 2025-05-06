@@ -66,7 +66,7 @@
     line-height: 40px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition:  0.2s;
 }
 
 .buy-ticket-btn:hover {
@@ -87,7 +87,7 @@
     line-height: 40px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: 0.2s;
 }
 
 .registration-btn:hover{
@@ -114,7 +114,7 @@
     height: 29px;
     background-color: var(--accent-yellow);
     border-radius: 5px;
-    transition: background-color 0.2s;
+    transition:  0.2s;
 }
 
 .socials svg {
@@ -123,13 +123,15 @@
     color: var(--text-color-black);
 }
 
-.socials:hover{
+.socials:hover, svg:hover{
     background-color: var(--black-color);
-}
-
-.socials svg:hover{
     color: var(--accent-yellow);
+    
 }
+/* Check! */
+/* .socials svg:hover{
+    color: var(--accent-yellow);
+} */
 
 .headliners{
     display: flex;
