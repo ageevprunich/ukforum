@@ -20,7 +20,36 @@
     z-index: -1;
 }
 
-.theme-tracks-section::after {
+.theme-tracks-bg::before,.theme-tracks-bg::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease;
+    z-index: -1;
+}
+
+.theme-tracks-bg::before{
+    background-image: url('../images/gradient.svg');
+    opacity: 1;
+}
+
+.theme-tracks-bg.rotate-bg::before {
+    opacity: 0;
+}
+
+.theme-tracks-bg::after {
+    background-image: url('../images/gradient-rotate.svg');
+    opacity: 0;
+}
+
+.theme-tracks-bg.rotate-bg::after {
+    opacity: 1;
+}
+
+/* .theme-tracks-section::after {
     content: '';
     position: absolute;
     top: 0;
@@ -32,7 +61,7 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: -2;
-}
+} */
 
 .theme-tracks-title{
     position: relative;
@@ -132,6 +161,10 @@
     background-color: var(--accent-yellow);
     color: var(--black-color);
     font-weight: 700;
+}
+
+.tracks-btn-black:hover .theme-tracks-section::after{
+    background-image: url('../images/gradient-rotate.svg'); 
 }
 
 .tracks-btn-transparent {

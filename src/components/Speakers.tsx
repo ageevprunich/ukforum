@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import './Speakers.css';
 import speakers from '../speakers-data';
-
+import { ReactComponent as ArrowIconLeft } from '../images/arrow-icon-left.svg';
+import { ReactComponent as ArrowIconRight } from '../images/arrow-icon-right.svg';
 
 const Speakers = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +44,7 @@ const Speakers = () => {
                             <button
                                 className="carousel-btn left"
                                 onClick={() => setCurrentIndex((prev) => (prev - 1 + total) % total)} >
-                                <span className="arrow-icon-left"></span>
+                                <ArrowIconLeft/>
                             </button>
                             <p className="speaker-card-text">Панельні дискусії, реальні кейси та
                                 майстер-класи від відомих експертів з різних галузей - це все дозволить
@@ -54,7 +55,7 @@ const Speakers = () => {
                             <button
                                 className="carousel-btn right"
                                 onClick={() => setCurrentIndex((prev) => (prev + 1) % total)}>
-                                <span className="arrow-icon-right"></span>
+                                <ArrowIconRight/>
                                 </button>
                             <button className="speaker-card-btn-all">Всі спікери</button>
                         </div>

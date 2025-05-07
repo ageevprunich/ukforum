@@ -23,33 +23,24 @@
 .dligach{
     position: relative;
     background-repeat: no-repeat;
-    padding-left: 10px;
-    background-size: 1001px 570px;
-    background-position: 10px -20px;
-    transition: background-image 1st;
+    transition: background-image 1s;
 }
 
 .tigipko{
     position: relative;
     background-repeat: no-repeat;
-    background-size: 997px 952px;
-    background-position: -40px -35px;
     transition: background-image 1s;
 }
 
 .fedoriv{
     position: relative;
     background-repeat: no-repeat;
-    background-size: 999px 853px;
-    background-position: 35px -40px;
     transition: background-image 1s ;
 }
 
 .dubilet{
     position: relative;
     background-repeat: no-repeat;
-    background-size: 940px 491px;
-    background-position: left -10px;
     transition: background-image 1s;
 }
 
@@ -196,12 +187,14 @@
     left: -26px;
     background-color: var(--text-color-white);
     border: 4px solid var(--accent-yellow);
+    padding-left: 4px;
 }
 
 .carousel-btn.right {
     right: -26px;
     background: var(--accent-yellow);
     border: none;
+    padding-right: 4px;
 }
 
 .carousel-btn.left:hover{
@@ -209,26 +202,21 @@
     border-color: var(--black-color);
 }
 
-.arrow-icon-right {
-    width: 0;
-    height: 0;
-    border-top: 9px solid transparent;
-    border-bottom: 9px solid transparent;
-    border-left: 10px solid var(--text-color-white);
-}
-
 .carousel-btn.right:hover {
     background-color: var(--black-color);
 }
 
-.arrow-icon-left {
-    width: 0;
-    height: 0;
-    border-top: 9px solid transparent;
-    border-bottom: 9px solid transparent;
-    border-right: 10px solid var(--accent-yellow);
+.carousel-btn.left svg {
+    width: 10px;
+    height: 18px;
+    color: var(--accent-yellow);
 }
 
-.arrow-icon-left:hover {
-    border-right: 10px solid var(--black-color);
+.carousel-btn.right svg {
+    width: 10px;
+    height: 18px;
+}
+
+.carousel-btn.left:hover svg {
+    color: var(--black-color);
 }

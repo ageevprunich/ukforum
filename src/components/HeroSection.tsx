@@ -29,11 +29,11 @@ const HeroSection = () => {
 
           <div className="container-socials">
             <ul className="socials-list">
-              <li><a className="socials" href="#"><TelegramIcon /></a></li>
-              <li><a className="socials" href="#"><FacebookIcon /></a></li>
-              <li><a className="socials" href="#"><InstagramIcon /></a></li>
-              <li><a className="socials" href="#"><LinkedInIcon /></a></li>
-              <li><a className="socials" href="#"><YouTubeIcon /></a></li>
+              <li className="socials-li"><a className="socials" href="#"><TelegramIcon /></a></li>
+              <li className="socials-li"><a className="socials" href="#"><FacebookIcon /></a></li>
+              <li className="socials-li"><a className="socials" href="#"><InstagramIcon /></a></li>
+              <li className="socials-li"><a className="socials" href="#"><LinkedInIcon /></a></li>
+              <li className="socials-li"><a className="socials" href="#"><YouTubeIcon /></a></li>
             </ul>
           </div>
         </div>

@@ -80,6 +80,11 @@
     cursor: pointer;
 }
 
+.contact-organizers-btn:hover{
+    background-color: var(--black-color);
+    color: var(--text-color-white);
+}
+
 .contact-organizers-text{
     font-size: 18px;
     font-weight: 400;

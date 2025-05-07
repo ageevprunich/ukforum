@@ -58,7 +58,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 890px;
+    max-width: 870px;
 }
 
 .ticket-card {
@@ -126,11 +126,16 @@
     max-width: 205px;
     max-height: 50px;
     border: none;
-    color: var(--color-black);
+    color: var(--black-color);
     font-size: 16px;
     font-weight: 600;
     line-height: 40px;
     cursor: pointer;
+}
+
+.ticket-card-buy-btn:hover{
+    background-color: var(--black-color);
+    color: var(--text-color-white);
 }
 
 .ticket-card-options {
@@ -183,7 +188,6 @@
 .discount-title {
     background: var(--accent-yellow);
     padding: 55px 75px 64px;
-    
     max-width: 270px;
     height: 100%;
 }
@@ -198,7 +202,7 @@
 
 .discount-details {
     position: relative;
-    max-width: 810px;
+    max-width: 790px;
     max-height: 160px;
     width: 100%;
     margin: 0;
