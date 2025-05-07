@@ -23,25 +23,25 @@
 .dligach{
     position: relative;
     background-repeat: no-repeat;
-    transition: background-image 1s;
+    transition: background-image 0.5s;
 }
 
 .tigipko{
     position: relative;
     background-repeat: no-repeat;
-    transition: background-image 1s;
+    transition: background-image 0.5s;
 }
 
 .fedoriv{
     position: relative;
     background-repeat: no-repeat;
-    transition: background-image 1s ;
+    transition: background-image 0.5s;
 }
 
 .dubilet{
     position: relative;
     background-repeat: no-repeat;
-    transition: background-image 1s;
+    transition: background-image 0.5s;
 }
 
 .decor-and-title{

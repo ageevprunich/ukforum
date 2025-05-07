@@ -1,0 +1,157 @@
+.header-mobile {
+    padding: 16px 0;
+    background-color: var(--primary-white);
+    position: relative;
+}
+
+.header-container-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.burger-icon {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -150%;
+    width: 360px;
+    height: 100%;
+    background: var(--text-color-white);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+.close-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0 40px;
+    margin: 80px 0 0;
+    gap: 24px;
+}
+
+.mobile-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-color-black);
+}
+
+.mobile-container-socials {
+    width: 100%;
+    max-width: 225px;
+    margin: 75px auto 0;
+}
+
+.mobile-socials-list {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-socials-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--accent-yellow);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.mobile-socials-li:hover {
+    background-color: var(--black-color);
+}
+
+.mobile-socials-li:hover svg {
+    color: var(--accent-yellow);
+}
+
+.mobile-socials {
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-socials svg {
+    width: 20px;
+    height: 20px;
+    color: var(--text-color-black);
+}
+
+.mobile-buy-ticket-btn {
+    width: 100%;
+    max-width: 270px;
+    max-height: 67px;
+    margin: 56px 40px 80px;
+    background-color: var(--accent-yellow);
+    border: 2px solid var(--black-color);
+    color: var(--black-color);
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.mobile-buy-ticket-btn:hover {
+    background-color: var(--black-color);
+    color: var(--text-color-white);
+}
+
+@media (max-width: 991px) {
+    .logo-mobile img {
+        width: 100%;
+        max-width: 100px;
+        max-height: 50px;
+    }
+
+    .links {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-mobile img {
+        width: 100%;
+        max-width: 64px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 480px) {}

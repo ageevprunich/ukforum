@@ -1,25 +1,35 @@
-import React from "react";
-import './Header.css';
+import React, { useEffect, useRef, useState } from 'react';
+import HeaderDesktop from './HeaderDesktop';
+import HeaderMobile from './HeaderMobile';
 
 const Header = () => {
+    const containerRef = useRef(null);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const observer = new ResizeObserver(entries => {
+            for (let entry of entries) {
+                const width = entry.contentRect.width;
+                setIsMobile(width <= 991);
+            }
+        });
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current);
+        }
+
+        return () => {
+            if (containerRef.current) {
+                observer.unobserve(containerRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <header className="header">
-            <div className="container header-container">
-                <a className="logo" href="#"><img src='/images/logo.svg' alt="Logo" /></a>
-                <nav className="header-nav">
-                    <ul className="header-menu">
-                        <li><a className="links" href="#">Про форум</a></li>
-                        <li><a className="links" href="#">Спікери</a></li>
-                        <li><a className="links" href="#">Програма</a></li>
-                        <li><a className="links" href="#">Спонсори та партнери</a></li>
-                        <li><a className="links" href="#">Контакти</a></li>
-                    </ul>
-                </nav>
-                <button className="header-buy-ticket-btn" >Придбати квитки</button>
-            </div>
-            
-            
-        </header>
+        <div ref={containerRef}>
+            {isMobile ? <HeaderMobile /> : <HeaderDesktop />}
+        </div>
     );
 };
+
 export default Header;

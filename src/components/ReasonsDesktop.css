@@ -1,4 +1,4 @@
-.reasons-to-join-section{
+.reasons-to-join-section {
     padding: 100px 0px 120px;
 }
 
@@ -6,7 +6,7 @@
     
 } */
 
-.reason-h2text{
+.reason-h2text {
     position: relative;
     font-size: 48px;
     font-weight: 900;
@@ -24,23 +24,23 @@
     background-color: var(--text-color-black);
 }
 
-.reason-text-bold{
+.reason-text-bold {
     font-weight: 700;
 }
 
-.reason-text{
+.reason-text {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
 }
 
-.reason-cards-container{
+.reason-cards-container {
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
 }
 
-.reason-info-cards{
+.reason-info-cards {
     position: relative;
     z-index: 0;
     width: 100%;
@@ -50,7 +50,7 @@
     background-color: var(--accent-yellow);
 }
 
-.reason-info-cards::before{
+.reason-info-cards::before {
     content: '';
     position: absolute;
     top: 0;
@@ -65,14 +65,14 @@
     z-index: -1;
 }
 
-.card-number{
+.card-number {
     font-size: 48px;
     font-weight: 700;
     line-height: 50px;
     margin: 0;
 }
 
-.card-title{
+.card-title {
     font-size: 28px;
     font-weight: 600;
     line-height: 40px;
@@ -80,14 +80,14 @@
     white-space: nowrap;
 }
 
-.card-text{
+.card-text {
     font-size: 18px;
     font-weight: 400;
     line-height: 23px;
     margin: 0 0 20px;
 }
 
-.reason-card-corner-icon{
+.reason-card-corner-icon {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -95,11 +95,23 @@
     height: 30px;
 }
 
-.decor-container{
+.decor-container {
     display: flex;
     justify-content: right;
 }
 
-.reason-decor{
+.reason-decor {
     padding-top: 80px;
 }
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {
+    .reason-info-cards {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {}

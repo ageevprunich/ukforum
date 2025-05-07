@@ -3,27 +3,32 @@
     background-color: var(--primary-white);
 }
 
-.header-container{
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo img{
-    width: 133px;
+.logo img {
+    width: 100%;
+    max-width: 133px;
     height: 65px;
+}
+
+.header-nav{
+    width: 100%;
+    max-width: 660px;
 }
 
 .header-menu {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
-    gap: 50px;
-
 }
 
-.links{
+.links {
     text-decoration: none;
     color: var(--text-color-black);
     font-weight: 400;
@@ -32,11 +37,11 @@
     transition: font-weight 0.2s;
 }
 
-.links:hover{
+.links:hover {
     font-weight: 700;
 }
 
-.header-buy-ticket-btn{
+.header-buy-ticket-btn {
     background-color: var(--accent-yellow);
     color: var(--black-color);
     border: 2px solid var(--black-color);
@@ -50,7 +55,17 @@
     transition: background-color 0.2s;
 }
 
-.header-buy-ticket-btn:hover{
+.header-buy-ticket-btn:hover {
     background-color: var(--black-color);
     color: var(--text-color-white);
 }
+
+@media (max-width: 1200px) {
+    .header-nav{
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+
+
