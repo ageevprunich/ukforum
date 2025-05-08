@@ -67,3 +67,11 @@
     height: 18px;
     color: var(--text-color-white);
 }
+
+
+@media (max-width:991px) {
+    .footer-container{
+        flex-direction: column;
+        max-width: 50%;
+    }
+}

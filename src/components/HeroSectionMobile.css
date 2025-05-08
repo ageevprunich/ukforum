@@ -1,3 +1,319 @@
+@media (max-width: 991px) {
+    .hero-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section-title{
+        position: relative;
+    }
+
+    .hero-section-title-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-section-title-text {
+        top: 320px;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    .btns-container {
+        margin-top: 25px;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .buy-ticket-btn,
+    .registration-btn {
+        width: 90%;
+        height: auto;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .event-info {
+        margin: 64px 0 48px 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .tooltip {
+        /* width: 100%; */
+        left: 0;
+    }
+
+    .headliners {
+        position: relative;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headliners-photo {
+        width: 80%  ;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .headliners-list-block {
+        position: absolute;
+        right: 25px;
+        bottom: -80px;
+        align-items: center;
+        margin: 0;
+    }
+
+    .headliners-list-info{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 45px;
+    }
+
+    .headliners-decor {
+        position: absolute;
+        right: 0;
+        margin-bottom: 0
+    }
+
+    .hero-section-decor {
+        /* flex-direction: column; */
+        margin-top: 90px;
+        align-items: end
+    }
+}
+
+@media (max-width:768px) {
+    .hero-section-title-text {
+        top: 75%;
+        font-size: 8vw;
+    }
+
+    .headliners-decor {
+        position: absolute;
+        right: 0;
+        margin-bottom: 0;
+        width: 10vw;
+        height: 12vw;
+    }
+
+    .hero-section-title-img {
+        max-width: 100%;
+    }
+
+    .hero-section-title-text {
+        top: 40vw;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    .buy-ticket-btn,
+    .registration-btn {
+        width: 49%;
+        height: auto;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+
+    .event-info {
+        max-width: 450px;
+        max-height: 128px;
+        box-sizing: border-box;
+    }
+
+    .event-text-bold {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .event-text-plain,
+    .event-text-plain-hight {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .event-corner-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tooltip-backdrop {
+        opacity: 0;
+        visibility: hidden;
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .tooltip {
+        top: calc(100% + 20px);
+
+        left: -40px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px;
+        z-index: 1000;
+    }
+
+    .tooltip-wrapper:hover .tooltip,
+    .tooltip-wrapper:hover .tooltip-backdrop {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: none;
+    }
+
+    .headliners-photo {
+        width: 100%;
+        max-width: 468px;
+    }
+
+    .headliners-list-block {
+        position: absolute;
+        right: 0px;
+        bottom: -50px;
+        align-items: center;
+        margin: 0;
+    }
+
+    .headliners-list-info {
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .decor-slash {
+        width: 48px;
+        height: 24px;
+    }
+
+    .decor-dot {
+        width: 84px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .headliners-decor {
+        position: absolute;
+        right: 0;
+        margin-bottom: 0;
+        width: 40px;
+        height: 47px;
+    }
+
+    .hero-section-title-img{
+        max-width: 100%;
+    }
+
+    .hero-section-title-text {
+        top: 40vw;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .buy-ticket-btn,
+    .registration-btn {
+        width: 49%;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+
+    .event-info {
+        max-width: 312px;
+        max-height: 128px;
+        box-sizing: border-box;
+    }
+
+    .event-text-bold {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .event-text-plain,
+    .event-text-plain-hight{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .event-corner-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tooltip-backdrop {
+        opacity: 0;
+        visibility: hidden;
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .tooltip {
+        top: 100px;
+        left: -40px;
+        font-size: 11px ;
+        font-weight: 400;
+        line-height: 16px;
+        z-index: 1000;
+    }
+
+    .tooltip-wrapper:hover .tooltip,
+    .tooltip-wrapper:hover .tooltip-backdrop {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .headliners-photo{
+        width: 100%;
+        max-width: 312px;
+    }
+
+    .headliners-list-block {
+        position: absolute;
+        right: 0;
+        bottom: -50px;
+        align-items: center;
+        margin: 0;
+    }
+
+    .headliners-list-info{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 8px;
+    }
+
+    .decor-slash{
+        width: 32px;
+        height: 17px;
+    }
+
+    .decor-dot{
+        width: 56px;
+        height: 5px;
+    }
+}
+
 /*
 @media (max-width: 1200px) {}
 

@@ -4,14 +4,12 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
 .cookie-popup {
     position: fixed;
     top: 150px;
-    /* left: 30%; */
     max-width: 510px;
     max-height: 260px;
     background-color: var(--text-color-white);
@@ -52,4 +50,16 @@
     background-color: var(--black-color);
     border-color: var(--black-color);
     color: var(--text-color-white);
+}
+
+@media (max-width: 768px) {
+    .cookie-popup{
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 480px ) {
+    .cookie-popup{
+        max-width: 296px;
+    } 
 }

@@ -36,16 +36,18 @@ code {
   .container {
     max-width: 960px;
   }
-}
+} 
 
 @media (max-width: 991px) {
   .container {
-    max-width: 768px;
+    max-width: 720px;
+    padding: 0 24px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 100%;
+    max-width: 90%;
+    padding: 0 24px;
   }
 }

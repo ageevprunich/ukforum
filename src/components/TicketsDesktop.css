@@ -1,13 +1,13 @@
-.tickets-section{
+.tickets-section {
     padding: 100px 0;
 }
 
-.title-and-benefits{
+.title-and-benefits {
     max-width: 270px;
     width: 100%;
 }
 
-.tickets-title{
+.tickets-title {
     position: relative;
     font-size: 48px;
     font-weight: 900;
@@ -16,7 +16,7 @@
     text-transform: uppercase;
 }
 
-.tickets-title::before{
+.tickets-title::before {
     content: '';
     position: absolute;
     top: 0;
@@ -38,7 +38,7 @@
     margin-top: 280px;
 }
 
-.ticket-benefits-title{
+.ticket-benefits-title {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -46,6 +46,7 @@
     padding: 11px 0 10px 17px;
     margin: 0;
 }
+
 .ticket-benefits-title:nth-child(odd) {
     background-color: var(--grey-color);
 }
@@ -89,14 +90,14 @@
     z-index: 10;
 }
 
-.ticket-card-title{
+.ticket-card-title {
     font-size: 32px;
     font-weight: 600;
     line-height: 40px;
     margin: 22px 33px 30px;
 }
 
-.ticket-card-date{
+.ticket-card-date {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -133,7 +134,7 @@
     cursor: pointer;
 }
 
-.ticket-card-buy-btn:hover{
+.ticket-card-buy-btn:hover {
     background-color: var(--black-color);
     color: var(--text-color-white);
 }
@@ -155,23 +156,23 @@
 .ticket-card-options-icon {
     padding: 12px 0 12px;
     height: 12px;
-    text-align: center; 
+    text-align: center;
 }
 
 .ticket-card-options-icon:nth-child(odd) {
     background-color: var(--grey-color);
 }
 
-.ticket-card-options-icon:last-child{
+.ticket-card-options-icon:last-child {
     height: 29px;
 }
 
-.icon-accept{
+.icon-accept {
     width: 18px;
     height: 12px;
 }
 
-.icon-decline{
+.icon-decline {
     width: 12px;
     height: 12px;
 }
@@ -192,7 +193,7 @@
     height: 100%;
 }
 
-.discount-title-text{
+.discount-title-text {
     font-size: 32px;
     font-weight: 600;
     line-height: 40px;
@@ -210,7 +211,7 @@
     background-color: var(--grey-color);
 }
 
-.discount-details-text{
+.discount-details-text {
     font-size: 20px;
     font-weight: 400;
     line-height: 40px;
@@ -218,18 +219,18 @@
     margin: 0;
 }
 
-.discount-details-text:first-child{
+.discount-details-text:first-child {
     margin-bottom: 19px;
 }
 
-.discount-details-text span{
+.discount-details-text span {
     font-size: 22px;
     font-weight: 600;
     line-height: 40px;
     margin-left: 215px;
 }
 
-.discount-corner-icon{
+.discount-corner-icon {
     position: absolute;
     bottom: 20px;
     right: 20px;

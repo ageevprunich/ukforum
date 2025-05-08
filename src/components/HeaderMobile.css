@@ -41,14 +41,17 @@
 
 .mobile-menu.open {
     right: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .close-icon {
-    font-size: 24px;
     background: none;
     border: none;
-    float: right;
+    margin: 20px 20px 0 0;
+    align-self: flex-end;
     cursor: pointer;
+    
 }
 
 .mobile-menu-list {
@@ -56,7 +59,7 @@
     flex-direction: column;
     list-style: none;
     padding: 0 40px;
-    margin: 80px 0 0;
+    margin: 40px 0 0;
     gap: 24px;
 }
 
@@ -66,6 +69,11 @@
     font-weight: 400;
     line-height: 24px;
     color: var(--text-color-black);
+    transition: 0.2s;
+}
+
+.mobile-link:hover{
+    font-weight: 700;
 }
 
 .mobile-container-socials {
@@ -134,6 +142,9 @@
 }
 
 @media (max-width: 991px) {
+    .header-mobile{
+        max-width: 100%;
+    }
     .logo-mobile img {
         width: 100%;
         max-width: 100px;
@@ -151,6 +162,14 @@
         width: 100%;
         max-width: 64px;
         height: 32px;
+    }
+
+    .mobile-menu{
+        width: 100%;
+    }
+
+    .mobile-buy-ticket-btn{
+        margin: 56px auto 80px;
     }
 }
 

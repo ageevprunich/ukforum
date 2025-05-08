@@ -48,7 +48,8 @@
 }
 
 .submit-btn {
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0;
     background: var(--accent-yellow);
     color: var(--black-color);
     font-size: 16px;
@@ -57,4 +58,85 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .reservation-modal{
+        max-width: 60%;
+        max-height: 70%;
+    }
+    .reservation-modal-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 32px;
+        margin: 0 0 30px;
+    }
+
+    .reservation-modal-form {
+        max-width: 100%;
+        /* max-width: 264px;
+        max-height: 232px; */
+    }
+
+    .reservation-modal-input {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 18px 40px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        box-sizing: border-box;
+    }
+
+    .submit-btn {
+        width: 100%;
+        max-width: 100%;
+        max-height: 40px;
+        padding: 13px 0;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reservation-modal{
+        max-width: 264px;
+        max-height: 268px;
+        padding: 35px 32px;
+    }
+
+    .reservation-modal-title{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        margin: 0 0 15px;
+    }
+
+    .reservation-modal-form{
+        width: 100%;
+        max-width: 264px;
+        max-height: 232px;
+    }
+
+    .reservation-modal-input{
+        max-width: 264px;
+        max-height: 32px;
+        padding: 9px 20px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        box-sizing: border-box;
+    }
+
+    .submit-btn{
+        width: 100%;
+        max-width: 264px;
+        max-height: 40px;
+        padding: 13px 0;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+    }
 }

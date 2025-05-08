@@ -118,3 +118,26 @@
 .underline{
     text-decoration: underline;
 }
+
+
+@media (max-width:991px) {
+    .organizers-section {
+        max-width: 50%;
+        padding: 0;
+    }
+    .decor-and-title{
+        flex-direction: column;
+        width: 100px;
+        padding: 0;
+    }
+    .organizers-logo-container{
+        max-width: 50%;
+        flex-direction: column;
+    }
+    .fuwart-logo img{
+        width: 100px;
+    }
+    .megapolis-logo img{
+        width: 100px;
+    }
+}

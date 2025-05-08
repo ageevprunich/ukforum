@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './HeaderMobile.css';
 
+import { ReactComponent as CloseIcon } from '../images/close-icon.svg';
 import { ReactComponent as TelegramIcon } from '../images/telegram-icon.svg';
 import { ReactComponent as FacebookIcon } from '../images/facebook-icon.svg';
 import { ReactComponent as InstagramIcon } from '../images/instagram-icon.svg';
@@ -22,7 +23,7 @@ const HeaderMobile = () => {
             </div>
 
             <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-                <button className="close-icon" onClick={() => setMenuOpen(false)}>×</button>
+                <button className="close-icon" onClick={() => setMenuOpen(false)}><CloseIcon/></button>
                 <nav className="mobile-nav">
                     <ul className="mobile-menu-list">
                         <li><a className="mobile-link" href="#">Про форум</a></li>
