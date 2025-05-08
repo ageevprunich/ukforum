@@ -1,3 +1,196 @@
-.reasons-to-join-section{
-    max-width: 50%;
+@media (max-width: 991px) {
+    .reasons-container {
+        position: relative;
+    }
+
+    .reasons-container::after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 10px;
+        height: 4px;
+        width: 100%;
+        background-color: rgba(218, 218, 218, 1);
+        z-index: 10;
+    }
+    
+  .reason-cards-container-scroll {
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .reason-cards-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .reason-info-cards {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 370px;
+    max-width: none;
+    height: 480px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+    .reasons-container {
+        position: relative;
+    }
+
+    .reasons-container::after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 10px;
+        height: 4px;
+        width: 100%;
+        background-color: rgba(218, 218, 218, 1);
+        z-index: 10;
+    }
+
+    .reasons-to-join-section {
+        padding: 50px 0px 70px;
+    }
+
+    .reason-h2text {
+        position: relative;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .reason-h2text::before {
+        top: -10px;
+        left: 0;
+        width: 30px;
+        height: 6px;
+    }
+
+    .reason-cards-container {
+        margin-top: 0px;
+    }
+
+    .reason-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 12px 0 18px;
+    }
+
+    .reason-info-cards {
+        width: 100%;
+        max-width: 331px;
+        height: 427px;
+
+    }
+
+    .card-number {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+
+    .card-title {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36px;
+        margin: 20px 0 16px;
+        white-space: wrap;
+    }
+
+    .card-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .reason-card-corner-icon {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .reasons-container{
+        position: relative;
+    }
+    .reasons-container::after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 10px;
+        height: 4px;
+        width: 90%;
+        background-color: rgba(218, 218, 218, 1);
+        z-index: 10;
+    }
+    
+    .reasons-to-join-section {
+        padding: 50px 0px 70px;
+    }
+    .reason-h2text {
+        position: relative;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .reason-h2text::before {
+        top: -10px;
+        left: 0;
+        width: 21px;
+        height: 4px;
+    }
+
+    .reason-cards-container {
+
+        margin-top: 0px;
+    }
+
+    .reason-text {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        margin: 8px 0 12px;
+    }
+    
+    .reason-info-cards {
+        width: 100%;
+        max-width: 276px;
+        height: 356px;
+
+    }
+
+    .card-number {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        margin: 20px 0 16px;
+        white-space: nowrap;
+    }
+
+    .card-text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .reason-card-corner-icon {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 21px;
+        height: 21px;
+    }
 }
