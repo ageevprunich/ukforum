@@ -20,42 +20,42 @@
     z-index: -1;
 }
 
-.dligach{
+.dligach {
     position: relative;
     background-repeat: no-repeat;
     transition: background-image 0.5s;
 }
 
-.tigipko{
+.tigipko {
     position: relative;
     background-repeat: no-repeat;
     transition: background-image 0.5s;
 }
 
-.fedoriv{
+.fedoriv {
     position: relative;
     background-repeat: no-repeat;
     transition: background-image 0.5s;
 }
 
-.dubilet{
+.dubilet {
     position: relative;
     background-repeat: no-repeat;
     transition: background-image 0.5s;
 }
 
-.decor-and-title{
+.decor-and-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.speakers-decor-title{
+.speakers-decor-title {
     max-width: 70px;
     max-height: 35px;
 }
 
-.speakers-title{
+.speakers-title {
     position: relative;
     font-size: 48px;
     font-weight: 900;
@@ -76,13 +76,13 @@
 
 .speakers-carousel {
     display: flex;
-    align-items:end;
+    align-items: end;
     justify-content: space-between;
     position: relative;
     margin-top: 340px;
 }
 
-.speaker-avatar-inactive{
+.speaker-avatar-inactive {
     width: 100%;
     max-width: 130px;
     max-height: 130px;
@@ -99,7 +99,7 @@
     height: 288px;
 }
 
-.speaker-card-info{
+.speaker-card-info {
     display: flex;
 }
 
@@ -113,7 +113,7 @@
     object-position: top;
 }
 
-.speacker-card-name{
+.speacker-card-name {
     margin-left: 190px;
 }
 
@@ -131,7 +131,7 @@
     margin: 0;
 }
 
-.speaker-card-text{
+.speaker-card-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -139,7 +139,7 @@
     margin: 28px 0 0 0;
 }
 
-.speaker-card-btn-all{
+.speaker-card-btn-all {
     position: absolute;
     bottom: -33.5px;
     right: 53px;
@@ -154,15 +154,15 @@
     font-weight: 600;
     line-height: 40px;
     cursor: pointer;
-    transition:  0.2s;
+    transition: 0.2s;
 }
 
-.speaker-card-btn-all:hover{
+.speaker-card-btn-all:hover {
     background-color: var(--black-color);
     color: var(--text-color-white);
 }
 
-.right-avatars{
+.right-avatars {
     display: flex;
     width: 100%;
     max-width: 310px;
@@ -180,7 +180,7 @@
     height: 52px;
     cursor: pointer;
     z-index: 2;
-    
+
 }
 
 .carousel-btn.left {
@@ -197,7 +197,7 @@
     padding-right: 4px;
 }
 
-.carousel-btn.left:hover{
+.carousel-btn.left:hover {
     background-color: var(--text-color-white);
     border-color: var(--black-color);
 }
@@ -220,3 +220,29 @@
 .carousel-btn.left:hover svg {
     color: var(--black-color);
 }
+
+@media (max-width: 1200px) {
+    .dligach {
+        background-size: 980px 790px;
+    }
+
+    .tigipko {
+        background-size: 980px 700px;
+    }
+
+    .fedoriv {
+        background-size: 980px 700px;
+    }
+
+    .dubilet {
+        position: relative;
+        background-size: 980px 700px;
+        background-position: 0 50px;
+    }
+
+    .right-avatars{
+        max-width: 270px;
+    }
+}
+
+

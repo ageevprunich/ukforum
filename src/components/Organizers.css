@@ -125,11 +125,11 @@
         max-width: 50%;
         padding: 0;
     }
-    .decor-and-title{
+    /* .decor-and-title{
         flex-direction: column;
         width: 100px;
         padding: 0;
-    }
+    } */
     .organizers-logo-container{
         max-width: 50%;
         flex-direction: column;
