@@ -1,0 +1,395 @@
+@media (max-width: 991px) {
+
+    .theme-tracks-cards-carousel {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .carousel-viewport {
+        overflow: hidden;
+        padding: 0 23%;
+        position: relative;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+        will-change: transform;
+    }
+
+    .carousel-slide {
+        flex: 0 0 340px;
+        margin: 0 9px;
+        box-sizing: border-box;
+    }
+
+    .carousel-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .carousel-arrow {
+        background: none;
+        border: none;
+        font-size: 24px;
+        margin: 0 15px;
+        cursor: pointer;
+    }
+
+    .tracks-cards {
+        width: 100%;
+        height: 100%;
+        max-width: 340px;
+        max-height: 480px;
+        padding: 36px 25px;
+        box-sizing: border-box;
+
+    }
+
+    .tracks-cards-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .tracks-cards-list {
+        margin: 20px 0 0 0;
+    }
+
+    .tracks-cards-points {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+
+    .tracks-cards-points::before {
+        width: 8px;
+        height: 8px;
+    }
+
+    .tracks-btns-and-decor {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .tracks-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 190px;
+    }
+
+    .tracks-btn-black {
+        width: 264px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        margin: 0 auto;
+    }
+
+    .tracks-btn-transparent {
+        width: 264px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        margin: 0 auto;
+    }
+
+    .tracks-decor {
+        align-self: flex-end;
+        /* width: 40px;
+        height: 20px; */
+    }   
+    }
+
+
+@media (max-width: 768px) {
+    .theme-tracks-section {
+    padding: 50px 0 50px 25px;
+    }
+
+    .theme-tracks-title {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 24px;
+    }
+
+    .theme-tracks-title::before {
+        top: -8px;
+        width: 21px;
+        height: 4px;
+    }
+
+    .theme-tracks-decor-title {
+        width: 16px;
+        height: 16px;
+    }
+
+    .theme-tracks-cards-container {
+        margin-top: 20px;
+    }
+
+    .theme-tracks-cards-carousel {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .carousel-viewport {
+        overflow: hidden;
+        padding: 0 23%;
+        position: relative;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+        will-change: transform;
+    }
+
+    .carousel-slide {
+        flex: 0 0 340px;
+        margin: 0 9px;
+        box-sizing: border-box;
+    }
+
+    .carousel-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .carousel-arrow {
+        background: none;
+        border: none;
+        font-size: 24px;
+        margin: 0 15px;
+        cursor: pointer;
+    }
+
+    .tracks-cards {
+        width: 100%;
+        height: 100%;
+        max-width: 340px;
+        max-height: 480px;
+        padding: 36px 25px;
+        box-sizing: border-box;
+
+    }
+
+    .tracks-cards-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .tracks-cards-list {
+        margin: 20px 0 0 0;
+    }
+
+    .tracks-cards-points {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+
+    .tracks-cards-points::before {
+        width: 8px;
+        height: 8px;
+    }
+
+    .tracks-btns-and-decor {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .tracks-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 190px;
+    }
+
+    .tracks-btn-black {
+        width: 264px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        margin: 0 auto;
+    }
+
+    .tracks-btn-transparent {
+        width: 264px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        margin: 0 auto;
+    }
+
+    .tracks-decor {
+        align-self: flex-end;
+        width: 40px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-tracks-section {
+        padding: 50px 0 50px 25px;
+    }
+
+    .theme-tracks-title {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 24px;
+    }
+
+    .theme-tracks-title::before {
+        top: -8px;
+        width: 21px;
+        height: 4px;
+    }
+
+    .theme-tracks-decor-title {
+        width: 16px;
+        height: 16px;
+    }
+
+    .theme-tracks-cards-container {
+        margin-top: 20px;
+    }
+
+    .theme-tracks-cards-carousel {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .carousel-viewport {
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+        will-change: transform;
+    }
+
+    .carousel-slide {
+        flex: 0 0 272px;
+        margin: 0 9px;
+        box-sizing: border-box;     
+    }
+
+    .carousel-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .carousel-arrow {
+        background: none;
+        border: none;
+        font-size: 24px;
+        margin: 0 15px;
+        cursor: pointer;   }
+
+    .tracks-cards {
+        width: 100%;
+        height: 100%;
+        max-width: 272px;
+        max-height: 427px;
+        padding: 36px 25px;
+        box-sizing: border-box;
+
+    }
+
+    .tracks-cards-title {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+
+    .tracks-cards-list {
+        margin: 20px 0 0 0;
+    }
+
+    .tracks-cards-points {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+
+    .tracks-cards-points::before {
+        width: 8px;
+        height: 8px;
+    }
+
+    .tracks-btns-and-decor {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .tracks-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 190px;
+    }
+
+    .tracks-btn-black {
+        width: 264px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        margin: 0 auto;
+    }
+
+    .tracks-btn-transparent {
+        width: 264px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        margin: 0 auto;
+    }
+
+    .tracks-decor {
+        align-self: flex-end;
+        width: 40px;
+        height: 20px;   
+    }
+}
