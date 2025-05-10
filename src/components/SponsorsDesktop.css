@@ -1,11 +1,11 @@
-.sponsors-section{
+.sponsors-section {
     position: relative;
     overflow: hidden;
     padding: 100px 0 100px;
     z-index: 0;
 }
 
-.sponsors-section::before{
+.sponsors-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -20,12 +20,12 @@
     z-index: -1;
 }
 
-.sponsors-title{
+.sponsors-title {
     position: relative;
     font-size: 48px;
     font-weight: 900;
     line-height: 100px;
-    margin:  0 0 36px;
+    margin: 0 0 36px;
 }
 
 .sponsors-title::before {
@@ -38,42 +38,69 @@
     background-color: var(--text-color-black);
 }
 
-.sponsors-text{
+.sponsors-text {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     margin: 0;
 }
 
-.sponsors-banners-and-logo{
+.sponsors-banners-and-logo {
     display: flex;
     justify-content: space-between;
 }
 
-.logo-preset{
+.logo-preset {
     background-color: var(--grey-color);
     width: 100%;
     height: 240px;
 }
 
-.sponsors-baner{
+.sponsors-baner {
     max-width: 1190px;
 }
 
-.sponsors-logo-big{
+.sponsors-logo-big {
     max-width: 570px;
 }
 
-.sponsors-video{
+.sponsors-video {
     max-width: 370px;
 }
 
-.sponsors-logo-small{
+.sponsors-logo-small {
     max-width: 270px;
 }
 
-.transparent-div{
+.transparent-div {
     width: 100%;
     max-width: 270px;
     background-color: transparent;
+}
+
+@media (max-width: 1200px) {
+    .sponsors-banners-and-logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .sponsors-banners-and-logo.video{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        max-width: 570px;
+        margin: 0 auto;
+    }
+
+    .sponsors-text{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .sponsors-baner{
+        margin: 0 auto;
+    }
 }

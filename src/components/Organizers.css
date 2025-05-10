@@ -141,3 +141,11 @@
         width: 100px;
     }
 }
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1000px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {}

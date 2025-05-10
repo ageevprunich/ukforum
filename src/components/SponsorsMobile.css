@@ -1,0 +1,60 @@
+@media (max-width: 991px) {
+    .sponsors-section {
+        padding: 50px 0 32px;
+    }
+
+    .sponsors-title {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 32px;
+        margin: 0 0 52px;
+    }
+
+    .sponsors-title::before {
+        top: -15px;
+        width: 32px;
+        height: 4px;
+    }
+
+    .sponsors-banners-and-logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        max-width: 312px;
+        margin: 0 auto;
+    }
+
+    .sponsors-text {
+        width: 100%;
+        max-width: 312px;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0 auto 5px;
+    }
+
+    .logo-preset {
+        width: 100%;
+        height: 112px;
+        margin-bottom: 8px;
+    }
+
+    .sponsors-baner {
+        width: 100%;
+        max-width: 312px;
+        margin: 0 auto;
+    }
+
+    .sponsors-logo-small {
+        max-width: 152px;
+    }
+
+    .transparent-div {
+        width: 100%;
+        max-width: 270px;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {}
