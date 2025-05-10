@@ -13,7 +13,7 @@ const SpeakersDesktop = () => {
     const nextNextIndex = (currentIndex + 2) % total;
     return (
         <section className="speakers-section">
-            <div className="container" >
+            <div className="container speakers-container" >
                 <div className={speakers[currentIndex].bgname} style={{ backgroundImage: `url(${currentSpeaker.bg})` }}>
 
 

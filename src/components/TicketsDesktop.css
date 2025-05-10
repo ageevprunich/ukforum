@@ -238,4 +238,36 @@
     height: 30px;
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .title-and-benefits{
+        max-width: 200px;
+        margin-right: 10px;
+    }
+
+    /* .ticket-benefits{
+        margin-top: 318px
+    } */
+
+    .ticket-card{
+        max-width: 230px;
+    }
+
+    .ticket-card-price{
+        margin: 0 16px;
+    }
+
+    .ticket-card-buy-btn{
+        margin: 60px 22px 40px;
+    }
+
+    .discount-title{
+        width: 100%;
+        max-width: 200px;
+        box-sizing: border-box;
+        padding: 55px 40px 64px;
+    }
+    .discount-details{
+        max-width: 730px;
+        box-sizing: border-box;
+    }
+}
