@@ -1,0 +1,32 @@
+@media (max-width: 991px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links-container {
+        width: 100%;
+        max-width: 415px;
+    }
+
+    .footer-links-list {
+        flex-direction: column;
+        margin: 33px 0 28px;
+    }
+
+    .footer-container-socials {
+        margin: 0;
+    }
+
+    .copy-rights {
+        margin: 42px 0 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-socials {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@media (max-width: 480px) {}
