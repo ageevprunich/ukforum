@@ -1,0 +1,345 @@
+@media (max-width: 991px) {
+
+    .tickets-table {
+        flex-direction: column;
+    }
+
+    .ticket-benefits-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 32px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 40px;
+
+    }
+
+    .ticket-benefits-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .ticket-benefits-wrapper.open {
+        max-height: 1000px;
+    }
+
+    .ticket-benefits {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        border-top: 2px dashed var(--data-color-grey);
+    }
+
+    .ticket-benefits-title {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        height: 32px;
+        padding: 10px 0 7px 16px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .ticket-benefits-title:nth-child(odd) {
+        background-color: var(--grey-color);
+    }
+
+    .ticket-benefits-title:last-child {
+        height: 32px;
+    }
+
+    .ticket-card-options::before {
+        content: '';
+        display: block;
+        border-top: 2px dashed var(--data-color-grey);
+        width: 100%;
+        margin: 0;
+    }
+
+    .toggle-arrow {
+        transition: transform 0.3s ease;
+    }
+
+    .toggle-arrow.open {
+        transform: rotate(180deg);
+    }
+
+    .ticket-cards {
+        flex-direction: column;
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    .ticket-card {
+        /* max-width: 270px; */
+        max-height: 860px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-bottom: 16px;
+        overflow: hidden;
+    }
+
+    .ticket-card:last-child {
+        margin-bottom: 0;
+    }
+
+    .ticket-card-title {
+        margin: 22px 32px 30px;
+    }
+
+    .ticket-card-date {
+        margin: 0 32px 20px;
+    }
+
+    .ticket-card-old-price {
+        margin: 0 32px 14px;
+    }
+
+    .ticket-card-price {
+        margin: 0 32px;
+    }
+
+    .ticket-card-buy-btn {
+        margin: 46px 32px 30px;
+    }
+
+    .discount-section {
+        flex-direction: column;
+        margin-top: 40px;
+        max-height: 216px;
+        gap: 16px;
+    }
+
+    .discount-title {
+        padding: 32px 75px;
+        max-width: 270px;
+        max-height: 100px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .discount-details {
+        max-width: 270px;
+        max-height: 100px;
+        width: 100%;
+        margin: 0;
+        padding: 12px 43px 12px 43px;
+        background-color: var(--grey-color);
+        box-sizing: border-box;
+    }
+
+    .discount-details-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .discount-details-text:first-child {
+        margin-bottom: 0px;
+    }
+
+    .discount-details-text span {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 40px;
+        margin-left: 26px;
+    }
+
+    .discount-corner-icon {
+        bottom: 12px;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .tickets-section {
+        padding: 40px 0;
+    }
+
+    .tickets-title {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 40px;
+    }
+
+    .tickets-title::before {
+        width: 32px;
+        height: 4px;
+    }
+
+    .tickets-table {
+        flex-direction: column;
+    }
+
+    .ticket-benefits-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 32px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 40px;
+
+    }
+
+    .ticket-benefits-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .ticket-benefits-wrapper.open {
+        max-height: 1000px;
+    }
+
+    .ticket-benefits {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        border-top: 2px dashed var(--data-color-grey);
+    }
+
+    .ticket-benefits-title {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        height: 32px;
+        padding: 10px 0 7px 16px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .ticket-benefits-title:nth-child(odd) {
+        background-color: var(--grey-color);
+    }
+
+    .ticket-benefits-title:last-child {
+        height: 32px;
+    }
+
+    .ticket-card-options::before {
+        content: '';
+        display: block;
+        border-top: 2px dashed var(--data-color-grey);
+        width: 100%;
+        margin: 0;
+    }
+
+    .toggle-arrow {
+        transition: transform 0.3s ease;
+    }
+
+    .toggle-arrow.open {
+        transform: rotate(180deg);
+    }
+
+    .ticket-cards {
+        flex-direction: column;
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    .ticket-card {
+        /* max-width: 270px; */
+        max-height: 860px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-bottom: 16px;
+        overflow: hidden;
+    }
+
+    .ticket-card:last-child {
+        margin-bottom: 0;
+    }
+
+    .ticket-card-title {
+        margin: 22px 32px 30px;
+    }
+
+    .ticket-card-date {
+        margin: 0 32px 20px;
+    }
+
+    .ticket-card-old-price {
+        margin: 0 32px 14px;
+    }
+
+    .ticket-card-price {
+        margin: 0 32px;
+    }
+
+    .ticket-card-buy-btn {
+        margin: 46px 32px 30px;
+    }
+
+    .discount-section {
+        flex-direction: column;
+        margin-top: 40px;
+        max-height: 216px;
+        gap: 16px;
+    }
+
+    .discount-title {
+        padding: 32px 75px;
+        max-width: 270px;
+        max-height: 100px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .discount-details {
+        max-width: 270px;
+        max-height: 100px;
+        width: 100%;
+        margin: 0;
+        padding: 12px 43px 12px 43px;
+        background-color: var(--grey-color);
+        box-sizing: border-box;
+    }
+
+    .discount-details-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .discount-details-text:first-child {
+        margin-bottom: 0px;
+    }
+
+    .discount-details-text span {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 40px;
+        margin-left: 26px;
+    }
+
+    .discount-corner-icon {
+        bottom: 12px;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+}

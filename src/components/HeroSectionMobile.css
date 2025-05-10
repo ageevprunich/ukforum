@@ -23,7 +23,6 @@
     .btns-container {
         margin-top: 25px;
         flex-direction: row;
-        gap: 20px;
         align-items: center;
     }
 

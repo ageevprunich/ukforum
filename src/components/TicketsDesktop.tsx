@@ -9,7 +9,7 @@ const TicketsDesktop = () => {
         <section className="tickets-section">
             <div className="container">
                 <div className="tickets-table">
-                    {/* Ліва колонка — список переваг */}
+
                     <div className="title-and-benefits">
                         <h2 className="tickets-title">квитки</h2>
                         <ul className="ticket-benefits">
@@ -28,7 +28,7 @@ const TicketsDesktop = () => {
                             <li className="ticket-benefits-title">Afterparty & Networking після другого дня</li>
                         </ul>
                     </div>
-                    {/* Три типи квитків */}
+
                     <div className="ticket-cards">
                         {[{
                         name: 'Basic',
@@ -62,7 +62,6 @@ const TicketsDesktop = () => {
                     </div>
                 </div>
 
-                {/* Блок знижок */}
                 <div className="discount-section">
                     <div className="discount-title">
                         <p className="discount-title-text">Знижки</p>

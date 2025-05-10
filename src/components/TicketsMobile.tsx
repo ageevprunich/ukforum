@@ -1,69 +1,91 @@
-import React from "react";
-import './TicketsDesktop.css';
-import { ReactComponent as AcceptIcon } from '../images/decor-accept.svg';
-import { ReactComponent as DeclineIcon } from '../images/decor-decline.svg';
+import React, { useState } from "react";
+import './TicketsMobile.css';
+import { ReactComponent as ArrowIcon } from '../images/decor-arrow-down.svg';
 
+const fullBenefits = [
+    'Доступ к networking-чату',
+    'Участь в розіграшах',
+    'Пакет матеріалів (блокнот, ручка)',
+    'Фото з конференції',
+    'Бізнес-план',
+    'Подарунки від партнерів',
+    'Іменний сертифікат',
+    'Безкоштовне паркування',
+    'Індивідуальне паркомісце',
+    'Окремий вхід',
+    'Персональний асистент',
+    'Sweets & Drinks Nonstop',
+    'Afterparty & Networking після другого дня'
+];
 
-const TicketsDesktop = () => {
+const ticketData = [
+    {
+        name: 'Basic',
+        oldPrice: '1 600',
+        price: '1 200',
+        benefitsCount: 4
+    },
+    {
+        name: 'Standart',
+        oldPrice: '4 123',
+        price: '3 100',
+        benefitsCount: 8
+    },
+    {
+        name: 'TOP',
+        oldPrice: '11 438',
+        price: '8 600',
+        benefitsCount: 13
+    }
+];
+
+const TicketsMobile = () => {
+    const [openIndexes, setOpenIndexes] = useState<Record<number, boolean>>({});
+
+    const toggleOpen = (index: number) => {
+        setOpenIndexes(prev => ({
+            ...prev,
+            [index]: !prev[index]
+        }));
+    };
+
     return (
         <section className="tickets-section">
             <div className="container">
-                {/*  
                 <div className="tickets-table">
-                    
-                    <div className="title-and-benefits">
-                        <h2 className="tickets-title">квитки</h2>
-                        <ul className="ticket-benefits">
-                            <li className="ticket-benefits-title">Доступ к networking-чату</li>
-                            <li className="ticket-benefits-title">Участь в розіграшах</li>
-                            <li className="ticket-benefits-title">Пакет матеріалів (блокнот, ручка)</li>
-                            <li className="ticket-benefits-title">Фото з конференції</li>
-                            <li className="ticket-benefits-title">Бізнес-план</li>
-                            <li className="ticket-benefits-title">Подарунки від партнерів</li>
-                            <li className="ticket-benefits-title">Іменний сертифікат</li>
-                            <li className="ticket-benefits-title">Безкоштовне паркування</li>
-                            <li className="ticket-benefits-title">Індивідуальне паркомісце</li>
-                            <li className="ticket-benefits-title">Окремий вхід</li>
-                            <li className="ticket-benefits-title">Персональний асистент</li>
-                            <li className="ticket-benefits-title">Sweets & Drinks Nonstop</li>
-                            <li className="ticket-benefits-title">Afterparty & Networking після другого дня</li>
-                        </ul>
-                    </div>
-                    
+                    <h2 className="tickets-title">квитки</h2>
+
                     <div className="ticket-cards">
-                        {[{
-                        name: 'Basic',
-                        oldPrice: '1 600',
-                        price: '1 200',
-                        list: [1,1,1,1,0,0,0,0,0,0,0,0,0]
-                        }, {
-                        name: 'Standart',
-                        oldPrice: '4 123',
-                        price: '3 100',
-                        list: [1,1,1,1,1,1,1,1,0,0,0,0,0]
-                        }, {
-                        name: 'TOP',
-                        oldPrice: '11 438',
-                        price: '8 600',
-                        list: [1,1,1,1,1,1,1,1,1,1,1,1,1]
-                        }].map((ticket, i) => (
-                        <div className="ticket-card" key={i}>
-                            <h3 className="ticket-card-title">{ticket.name}</h3>
-                            <p className="ticket-card-date">до 15.10.2023</p>
-                            <p className="ticket-card-old-price">&#8372; {ticket.oldPrice}</p>
-                            <p className="ticket-card-price">&#8372; {ticket.price}</p>
-                            <button className="ticket-card-buy-btn">Придбати квитки</button>
-                            <ul className="ticket-card-options">
-                            {ticket.list.map((item, idx) => (
-                                <li className="ticket-card-options-icon" key={idx}>{item ? <AcceptIcon className="icon-accept"/> : <DeclineIcon className="icon-decline" />}</li>
-                            ))}
-                            </ul>
-                        </div>
-                        ))}
+                        {ticketData.map((ticket, index) => {
+                            const isOpen = openIndexes[index];
+                            const benefits = fullBenefits.slice(0, ticket.benefitsCount);
+
+                            return (
+                                <div className="ticket-card" key={index}>
+                                    <h3 className="ticket-card-title">{ticket.name}</h3>
+                                    <p className="ticket-card-date">до 15.10.2023</p>
+                                    <p className="ticket-card-old-price">&#8372; {ticket.oldPrice}</p>
+                                    <p className="ticket-card-price">&#8372; {ticket.price}</p>
+                                    <button className="ticket-card-buy-btn">Придбати квитки</button>
+
+                                    <div className="ticket-benefits-toggle" onClick={() => toggleOpen(index)}>
+                                        <span>Що ви отримаєте</span>
+                                        <ArrowIcon className={`toggle-arrow ${isOpen ? 'open' : ''}`} />
+                                    </div>
+
+                                    <div className={`ticket-benefits-wrapper ${isOpen ? 'open' : ''}`}>
+                                        <ul className="ticket-benefits">
+                                            {benefits.map((benefit, i) => (
+                                                <li className="ticket-benefits-title" key={i}>{benefit}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
 
-                
                 <div className="discount-section">
                     <div className="discount-title">
                         <p className="discount-title-text">Знижки</p>
@@ -74,10 +96,9 @@ const TicketsDesktop = () => {
                         <img className="discount-corner-icon" src="/images/decor-arrow.svg" alt="decoration-arrow" />
                     </div>
                 </div>
-                */}
             </div>
         </section>
     );
 };
 
-export default TicketsDesktop;
+export default TicketsMobile;

@@ -117,7 +117,7 @@
 
 @media (max-width: 768px) {
     .theme-tracks-section {
-    padding: 50px 0 50px 25px;
+    padding: 50px 0 ;
     }
 
     .theme-tracks-title {
@@ -257,7 +257,7 @@
 
 @media (max-width: 480px) {
     .theme-tracks-section {
-        padding: 50px 0 50px 25px;
+        padding: 50px 0;
     }
 
     .theme-tracks-title {

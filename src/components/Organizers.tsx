@@ -8,10 +8,10 @@ const Organizers = () => {
     return (
         <section className="organizers-section">
             <div className="container">
-                <div className="decor-and-title">
+                {/* <div className="decor-and-title">
                     <h2 className="organizers-title">Організатори</h2>
                     <img className="organizers-decor-title" src='/images/decor-dot-doubleslash-black.svg' alt="decor-dotdoubleslashblack" />
-                </div>
+                </div>  Тільки на час розробки мобільної версії квитків!*/} 
                 
                 <div className="organizers-logo-container">
                     <div className="fuwart-logo">
